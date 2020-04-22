@@ -17,7 +17,7 @@ func main() {
 		return
 	}
 
-	out, err := client.RunCmdWithOutput("touch tl-cmd11.txt")
+	out, err := client.RunCmdWithOutput("touch tl-cmd.txt")
 	if err != nil {
 		fmt.Println("run cmd err: ", err.Error())
 		return
