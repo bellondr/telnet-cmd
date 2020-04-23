@@ -49,7 +49,7 @@ func NewClient(addr string) (*Client, error) {
 }
 
 func (c *Client) Close() {
-	c.Close()
+	c.Conn.conn.Close()
 }
 
 func (c *Client) Login(user, pwd string) error {
